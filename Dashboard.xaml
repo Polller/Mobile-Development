@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp7.Dashboard"
+             BackgroundColor="#4B5563">
+
+    <VerticalStackLayout Padding="10">
+        <Grid ColumnDefinitions="Auto, *, Auto" Padding="10">
+            <Image Source="menu_icon.png" HeightRequest="30" WidthRequest="30"/>
+            <Label Text="SBF" FontSize="48" TextColor="#8B5CF6" HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Image Source="user_icon.png" HeightRequest="30" WidthRequest="30"/>
+                <Label Text="User Account" TextColor="#D1D5DB"/>
+            </StackLayout>
+        </Grid>
+
+        <Grid ColumnDefinitions="Auto, *" Padding="100">
+            <Image Source="search_icon.png" HeightRequest="30" WidthRequest="200"/>
+            <Frame BackgroundColor="#D1D5DB" CornerRadius="20" Padding="0" HasShadow="False" VerticalOptions="Center">
+                <Grid ColumnDefinitions="*, Auto">
+                    <Entry Placeholder="Search..." BackgroundColor="Transparent" />
+                    <Image Source="search_icon.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" Margin="0,0,10,0" />
+                </Grid>
+            </Frame>
+        </Grid>
+
+        <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="*, *" Padding="10">
+            <StackLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Center">
+                <Image Source="top_hiring.png" HeightRequest="150" WidthRequest="150"/>
+                <Label Text="Top hiring band" TextColor="#D1D5DB" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Center">
+                <Image Source="genre_type.png" HeightRequest="150" WidthRequest="150"/>
+                <Label Text="Genre Type" TextColor="#D1D5DB" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Center">
+                <Image Source="music_artist.png" HeightRequest="150" WidthRequest="150"/>
+                <Label Text="Music Artist Type" TextColor="#D1D5DB" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+                <Image Source="music_generation.png" HeightRequest="150" WidthRequest="150"/>
+                <Label Text="Music Generation Type" TextColor="#D1D5DB" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Center">
+                <Image Source="hire_band.png" HeightRequest="150" WidthRequest="150"/>
+                <Label Text="Hire band member" TextColor="#D1D5DB" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Center">
+                <Image Source="apply_band.png" HeightRequest="150" WidthRequest="150"/>
+                <Label Text="Apply band member" TextColor="#D1D5DB" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Grid>
+
+        <Grid ColumnDefinitions="*, *, *" Padding="10">
+            <Image Source="back_icon.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+            <Image Source="profile_icon.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+            <Image Source="settings_icon.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
