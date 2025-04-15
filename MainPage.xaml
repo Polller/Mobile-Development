@@ -5,21 +5,15 @@
              BackgroundColor="#A6A6A6">
 
     <Grid RowDefinitions="*,Auto">
-        <Image Source="meenu.png" HeightRequest="20" WidthRequest="25" HorizontalOptions="Start" VerticalOptions="Start" Scale="1.5"/>
-        <Image Source="account.png" HeightRequest="25" WidthRequest="25" HorizontalOptions="End" VerticalOptions="Start" />
         <ScrollView>
             
             <VerticalStackLayout Spacing="20" Padding="30,40">
-                <Grid ColumnDefinitions="Auto,*,Auto">
+                <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto, *, Auto">
                     <Label Text="SBF" FontSize="60" TextColor="Purple" FontAttributes="Bold"
-                           Grid.Column="1"  Margin="125,0,0,0"/>
+                           Grid.Row="0"  Margin="125,0,0,0"/>
+                    <Image Source="account.png" Aspect="AspectFit" HeightRequest="120" WidthRequest="120"
+                           HorizontalOptions="Center" VerticalOptions="Center" Margin="0117,0,0,0" Grid.Row="1"/>
                 </Grid>
-
-                <Frame Padding="10" BackgroundColor="Transparent" HasShadow="False"
-                       BorderColor="Black" HeightRequest="120" WidthRequest="120"
-                       HorizontalOptions="Center" VerticalOptions="Center">
-                    <Image Source="avatar_placeholder.png" Aspect="AspectFit"/>
-                </Frame>
 
                 <Frame Padding="5" BackgroundColor="#C9C9E0" HasShadow="False">
                     <Entry x:Name="EmailEntry" Placeholder="Email:" BackgroundColor="Transparent" TextColor="Black"
@@ -43,11 +37,11 @@
 
                 <HorizontalStackLayout Spacing="30" HorizontalOptions="Center">
                     <VerticalStackLayout HorizontalOptions="Center" Spacing="5">
-                        <Image Source="facebook_icon.png" HeightRequest="40" WidthRequest="40" />
+                        <Image Source="fb.png" HeightRequest="40" WidthRequest="40" />
                         <Label Text="FB" TextColor="Black" FontSize="12" HorizontalOptions="Center" />
                     </VerticalStackLayout>
                     <VerticalStackLayout HorizontalOptions="Center" Spacing="5">
-                        <Image Source="google_icon.png" HeightRequest="40" WidthRequest="40" />
+                        <Image Source="google.png" HeightRequest="40" WidthRequest="40" />
                         <Label Text="Google" TextColor="Black" FontSize="12" HorizontalOptions="Center" />
                     </VerticalStackLayout>
                 </HorizontalStackLayout>
@@ -55,7 +49,7 @@
         </ScrollView>
 
         <Grid Grid.Row="1" BackgroundColor="#D1D1D1" Padding="20" ColumnDefinitions="*,*,*">
-            <Image Source="back_icon.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Start" />
+            <Image Source="meenu.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Start" Scale="1.5"/>
             <Image Source="user_icon.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="Center" />
             <Image Source="settings_icon.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" />
         </Grid>
